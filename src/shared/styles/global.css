@@ -1,0 +1,2 @@
+/* Retain a CSS entry for the StyleX plugin to append its generated rules. */
+@layer stylex;
