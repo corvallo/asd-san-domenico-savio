@@ -1,0 +1,76 @@
+{
+  "crop_box": [
+    0.0,
+    0.0,
+    1199.0,
+    1312.0
+  ],
+  "identity": {
+    "codecs": {
+      "avif": "1.4.2",
+      "freetype2": "2.14.3",
+      "fribidi": "1.0.17",
+      "harfbuzz": "14.5.0",
+      "jpg": "6.2",
+      "jpg_2000": "2.5.4",
+      "libjpeg_turbo": "3.2.0",
+      "libtiff": "4.7.2",
+      "littlecms2": "2.19",
+      "pil": "13.0.0",
+      "raqm": "0.11.0",
+      "webp": "1.6.0",
+      "xcb": null,
+      "zlib": "1.3.1.zlib-ng",
+      "zlib_ng": "2.3.3"
+    },
+    "pillow": "13.0.0",
+    "pipeline_sha256": "2dfbcf96c54811951534d8ae25c9d21f49aa75afc8ba5d4a14033875499459b9",
+    "provenance": "Existing public/images/hero-skater.png; user confirmed approved input for technical validation on 2026-11-04",
+    "settings": {
+      "aspect_ratio": null,
+      "crop": "contain",
+      "focal_point": [
+        0.5,
+        0.5
+      ],
+      "formats": [
+        "webp"
+      ],
+      "quality": 85,
+      "widths": [
+        480,
+        768,
+        1440
+      ]
+    },
+    "source": "public/images/hero-skater.png",
+    "source_sha256": "db9164e7fe5fbcbd59ba4bcbb20006ce08518aadf57d02546fc991577b0def8c"
+  },
+  "outputs": [
+    {
+      "bytes": 33592,
+      "height": 525,
+      "path": "public/images/generated/validation/hero-skater-480w.webp",
+      "sha256": "5b42445da7ac7061d482676b5f027b5bf9b54887643bfe8209496901b1d9714a",
+      "width": 480
+    },
+    {
+      "bytes": 66412,
+      "height": 840,
+      "path": "public/images/generated/validation/hero-skater-768w.webp",
+      "sha256": "253138f3db83d9306fd45b219426673d49997b850988b5611b049f2f4a9a78e3",
+      "width": 768
+    },
+    {
+      "bytes": 116958,
+      "height": 1312,
+      "path": "public/images/generated/validation/hero-skater-1199w.webp",
+      "sha256": "a400ef34838577099ef4c65a81fa184ed870285441560368c5ff340c2b07940c",
+      "width": 1199
+    }
+  ],
+  "source_size": [
+    1199,
+    1312
+  ]
+}

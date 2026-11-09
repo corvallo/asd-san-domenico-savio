@@ -7,9 +7,10 @@ import babel from "@rolldown/plugin-babel";
 import stylex from "@stylexjs/unplugin/vite";
 import variants from "@stylex-variants/core/babel";
 import { fileURLToPath } from "node:url";
+import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), partytown()],
+  integrations: [react(), partytown(), mdx()],
   // Keep the CSS asset that StyleX appends its generated rules to.
   build: { inlineStylesheets: "never" },
   vite: {

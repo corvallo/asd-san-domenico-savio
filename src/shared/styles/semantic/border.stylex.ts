@@ -2,7 +2,7 @@ import * as stylex from '@stylexjs/stylex';
 import { colors } from '../tokens/colors.stylex';
 
 export const border = stylex.defineVars({
-  default: colors.navy700,
+  default: colors.slate200,
   subtle: colors.navy800,
   strong: colors.navy500,
   accent: colors.gold500,

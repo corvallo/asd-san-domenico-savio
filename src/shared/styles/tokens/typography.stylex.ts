@@ -1,7 +1,7 @@
 import * as stylex from '@stylexjs/stylex';
 
 export const typography = stylex.defineVars({
-  fontDisplay: '"Cormorant Garamond", Georgia, serif',
+  fontDisplay: '"Playfair Display", Georgia, serif',
   fontBody: '"Inter", Arial, sans-serif',
   textXs: '0.75rem',
   textSm: '0.875rem',

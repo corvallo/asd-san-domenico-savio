@@ -10,11 +10,11 @@ const styles = stylex.create({
     color: colors.ivory50,
     textDecoration: "none",
     fontFamily: typography.fontDisplay,
-    fontSize: 20,
+    fontSize: { default: 17, "@media (max-width: 600px)": 13 },
     fontWeight: 600,
     lineHeight: 0.95,
   },
-  logoSpace: { width: { default: 65, "@media (max-width: 600px)": 0 }, height: 68 },
+  logoSpace: { width: 0, height: 48 },
 
   enroll: { flexShrink: 0 },
 });

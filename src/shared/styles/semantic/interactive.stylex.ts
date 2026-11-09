@@ -3,7 +3,7 @@ import { colors } from '../tokens/colors.stylex';
 
 export const interactive = stylex.defineVars({
   primary: colors.gold400,
-  primaryHover: colors.gold300,
+  primaryHover: colors.gold500,
   primaryActive: colors.gold500,
   primaryForeground: colors.navy950,
   secondary: colors.navy800,
@@ -13,7 +13,7 @@ export const interactive = stylex.defineVars({
   ghostHover: colors.navy800,
   ghostActive: colors.navy700,
   link: colors.gold400,
-  linkHover: colors.gold300,
+  linkHover: colors.gold500,
   linkVisited: colors.gold500,
   selected: colors.gold400,
   selectedForeground: colors.navy950,

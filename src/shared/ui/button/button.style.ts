@@ -1,4 +1,5 @@
 
+import { colors } from '../../styles/tokens/colors.stylex';
 import { sxv } from '@stylex-variants/core';
 
 import { interactive } from '../../styles/semantic/interactive.stylex';
@@ -18,7 +19,9 @@ export const buttonStyles = sxv({
         cursor: 'pointer',
         fontWeight: 600,
         textDecoration: 'none',
-        transitionDuration: motion.durationNormal,
+        transitionDuration: { default: motion.durationNormal, '@media (prefers-reduced-motion: reduce)': '0s' },
+        ':focus-visible': { outline: '2px solid', outlineColor: interactive.focusRing, outlineOffset: 4 },
+        ':active': { transform: 'translateY(1px)' },
 
         ':disabled': {
             opacity: 0.5,
@@ -30,21 +33,23 @@ export const buttonStyles = sxv({
         variant: {
             primary: {
                 backgroundColor: interactive.primary,
+                backgroundImage: `linear-gradient(180deg, ${colors.gold200}, ${colors.gold400})`,
                 color: interactive.primaryForeground,
                 borderColor: interactive.primary,
 
                 ':hover': {
                     backgroundColor: interactive.primaryHover,
+                    backgroundImage: 'none',
                 },
             },
 
             secondary: {
-                backgroundColor: interactive.secondary,
-                color: interactive.secondaryForeground,
-                borderColor: interactive.secondary,
+                backgroundColor: colors.transparent,
+                color: colors.navy900,
+                borderColor: colors.gold500,
 
                 ':hover': {
-                    backgroundColor: interactive.secondaryHover,
+                    backgroundColor: colors.gold50,
                 },
             },
 

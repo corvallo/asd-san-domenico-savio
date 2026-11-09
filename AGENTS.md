@@ -28,5 +28,3 @@ Read this file first. Read only the linked specification relevant to the task. D
 
 For task conventions see `docs/workflows/task-contract.md`.
 
-## StyleX Variants official skill (mandatory)
-When a task touches `@stylex-variants/core`, `sxv`, variants, slots, or the Babel transform, read `.agents/skills/stylex-variants/SKILL.md` first, then only its relevant reference pages. The official skill takes precedence over generic StyleX examples. If missing, ask for `bash tools/install-stylex-variants-skill.sh` to be run; do not invent APIs. Do not read this skill for unrelated tasks.
