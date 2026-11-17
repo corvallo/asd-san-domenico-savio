@@ -33,7 +33,8 @@ Prima di scrivere codice, leggi la codebase esistente: struttura delle cartelle,
 - `assets/atleta-1.png`, `assets/atleta-2.png`: ritagli senza sfondo, solo riferimento.
 
 ## Tavole
-- `Main` / `Scuro`: home. `MainSlide` / `ScuroSlide`: home con hero a slideshow (versione preferita).
+- `Main` / `Scuro`: home base. `MainSlide` / `ScuroSlide`: home con hero a slideshow dentro la mask.
+- `HomeFull` / `HomeFull-scuro`: home con hero a slideshow **a tutto schermo** e sezione reel Instagram (versione più recente, da usare come riferimento principale per la home). Prova in corso: potrebbe sostituire le altre varianti.
 - `Corsi`, `Galleria`, `Contatti`: pagine interne.
 - `DesignSystem`: token, tipografia, raggi, forme, componenti.
 - `Maschere`, `Maschere2`, `Maschere3`: **non implementare**, solo esplorazione.
@@ -45,12 +46,15 @@ Prima di scrivere codice, leggi la codebase esistente: struttura delle cartelle,
 - Staff: griglia `auto-fill` con ritratti circolari e anello d'oro sfalsato, filtri per ruolo, pulsante "Mostra tutto". Deve reggere molti membri.
 - Hero: foto dentro la mask organica `shape-blob`, con scia e ellissi d'oro sopra. Nel design è uno slideshow con dissolvenza; per ora implementare una sola foto segnaposto.
 - Carosello "Momenti in pista": nel design è uno scorrimento orizzontale; per ora segnaposto statico, da fare con Embla in seguito.
+- Hero a tutto schermo (`HomeFull`): foto a piena larghezza, header trasparente sopra la foto, sfumature blu notte a sinistra e in alto per la leggibilità, scia dorata che attraversa lo schermo, pallini di avanzamento, onda con filo d'oro in basso.
+- Reel Instagram: sezione in fascia blu con onda in cima (come il settore agonistico), fila orizzontale di riquadri verticali 9:16 con angoli di 28 px, copertina segnaposto, pulsante play tondo e didascalia a pillola. Al clic il reel si apre su Instagram (link esterno). Il pulsante "Guarda tutti su Instagram" chiude la sezione. Dati in un array tipizzato (link, titolo, copertina).
 - Footer: onda con filo d'oro sul bordo, fascia blu notte con colonne Pagine, Contatti, Seguici.
 - Maschera foto scelta: rettangolo morbido con scia dorata. Variante ancora da decidere (scia dentro la foto, affusolata, cornice interna, contorno aperto). L'arco è scartato.
 
 ## Da fare / non definito
 - Il menu tra le pagine è solo grafico, non collegato.
 - Filtri dello staff solo grafici.
+- Reel: link e copertine sono segnaposto. Per ora niente incorporamento né API di Instagram: solo link esterni. Le copertine reali arriveranno dopo (non crearle).
 - Tutti i testi, nomi, date, indirizzi e foto sono segnaposto tra parentesi quadre.
 - Componente `PhotoFrame` (rounded-3xl + scia dorata) da definire dopo aver scelto la variante.
 - Cambio tema: classe `dark` su `html`, seguendo ciò che il progetto già usa.

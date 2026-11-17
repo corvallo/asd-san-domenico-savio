@@ -3,6 +3,7 @@ import { courseCollection } from '~/entities/course';
 import { disciplineCollection } from '~/entities/discipline';
 import { eventCollection } from '~/entities/event';
 import { navigationCollection } from '~/entities/navigation';
+import { reelCollection } from '~/entities/reel';
 import { staffMemberCollection } from '~/entities/staff-member';
 import { pageCollection } from '~/pages/_editorial';
 
@@ -12,6 +13,7 @@ export const collections = {
   disciplines: disciplineCollection,
   events: eventCollection,
   navigation: navigationCollection,
+  reels: reelCollection,
   pages: pageCollection,
   staffMembers: staffMemberCollection,
 };

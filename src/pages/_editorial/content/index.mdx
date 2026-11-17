@@ -11,10 +11,12 @@ seo:
 import { getClub } from '~/entities/club';
 import { getDisciplines } from '~/entities/discipline';
 import { getEvents } from '~/entities/event';
+import { getReels } from '~/entities/reel';
 import { getStaffMembers, staffRoleFilters } from '~/entities/staff-member';
 import { Competitive } from '~/widgets/competitive';
 import { Disciplines } from '~/widgets/disciplines';
 import { Events } from '~/widgets/events';
+import { Reels } from '~/widgets/reels';
 import { Hero } from '~/widgets/hero';
 import { Moments } from '~/widgets/moments';
 import { Staff } from '~/widgets/staff';
@@ -23,6 +25,7 @@ import { TrialCta } from '~/widgets/trial-cta';
 export const club = await getClub();
 export const disciplines = await getDisciplines();
 export const events = await getEvents();
+export const reels = await getReels();
 export const staffMembers = await getStaffMembers();
 
 export const moments = [
@@ -64,6 +67,14 @@ export const moments = [
 />
 
 <Events title='Prossimi eventi' items={events} />
+
+<Reels
+  kicker='Instagram'
+  title='I nostri reel'
+  hint='Scorri →'
+  reels={reels}
+  profile={{ label: 'Guarda tutti su Instagram', href: 'https://www.instagram.com/PROFILO/' }}
+/>
 <Competitive
   kicker='Settore agonistico'
   title='Dal sogno alla pista'

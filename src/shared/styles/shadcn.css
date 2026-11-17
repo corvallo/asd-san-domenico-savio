@@ -58,6 +58,7 @@
   --wood: oklch(0.879 0.065 76); /* #F0D2A8 */
   --band: oklch(0.339 0.09 264); /* #1F3566 */
   --band-foreground: oklch(0.965 0.022 87.2); /* #FAF3E3 */
+  --band-accent: oklch(0.867 0.126 88.8); /* #F5CF6B */
 }
 
 .dark {
@@ -114,6 +115,7 @@
   --wood: oklch(0.765 0.091 68.5); /* #D9A872 */
   --band: oklch(0.345 0.103 267.7); /* #22346E */
   --band-foreground: oklch(0.965 0.022 87.2); /* #FAF3E3 */
+  --band-accent: oklch(0.867 0.126 88.8); /* #F5CF6B */
 }
 
 @theme inline {
@@ -174,6 +176,7 @@
   --color-wood: var(--wood);
   --color-band: var(--band);
   --color-band-foreground: var(--band-foreground);
+  --color-band-accent: var(--band-accent);
 
   /* Radius */
   --radius-sm: calc(var(--radius) * 0.6);

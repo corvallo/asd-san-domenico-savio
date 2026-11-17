@@ -41,7 +41,7 @@ export const sectionHeadingStyles = tv({
       default: {},
       band: {
         kicker: `
-          text-[#F5CF6B]
+          text-band-accent
         `,
         intro: `
           mt-5

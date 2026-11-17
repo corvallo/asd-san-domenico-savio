@@ -100,6 +100,15 @@ export const buttonVariants = tv({
 
         dark:focus-visible:ring-destructive/40
       `,
+      'band-outline': `
+        bg-transparent
+        text-band-accent
+
+        border-2
+        border-band-accent
+
+        hover:bg-band-foreground/10
+      `,
       'gold-outline': `
         bg-transparent
         text-gold-text
@@ -199,6 +208,14 @@ export const buttonVariants = tv({
     },
   },
   compoundVariants: [
+    {
+      variant: 'band-outline',
+      size: 'hero',
+      class: `
+        px-[34px]
+        py-[14px]
+      `,
+    },
     {
       variant: 'gold-outline',
       size: 'hero',

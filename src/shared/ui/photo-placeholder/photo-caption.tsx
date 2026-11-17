@@ -1,24 +1,41 @@
 import type { PropsWithChildren } from 'react';
-import { tv } from 'tailwind-variants';
+import { tv, type VariantProps } from 'tailwind-variants';
 
 const photoCaptionStyles = tv({
   base: `
     absolute
 
-    px-5
     py-2
 
     text-[15px]
     tracking-normal
 
-    bg-gold
-    text-gold-foreground
-
     rounded-full
   `,
+  variants: {
+    tone: {
+      gold: `
+        px-5
+
+        bg-gold
+        text-gold-foreground
+      `,
+      navy: `
+        px-[18px]
+
+        bg-gold-foreground
+        text-band-foreground
+      `,
+    },
+  },
+  defaultVariants: {
+    tone: 'gold',
+  },
 });
 
-/** Gold pill caption laid over a photo; position it with `className`. */
-export const PhotoCaption = ({ children, className }: PropsWithChildren<{ className?: string }>) => (
-  <span className={photoCaptionStyles({ className })}>{children}</span>
+type PhotoCaptionProps = PropsWithChildren<VariantProps<typeof photoCaptionStyles> & { className?: string }>;
+
+/** Pill caption laid over a photo; position it with `className`. */
+export const PhotoCaption = ({ children, tone, className }: PhotoCaptionProps) => (
+  <span className={photoCaptionStyles({ tone, className })}>{children}</span>
 );

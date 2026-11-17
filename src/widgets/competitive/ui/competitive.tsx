@@ -1,6 +1,5 @@
 import { tv } from 'tailwind-variants';
-import { Badge, Container, PhotoPlaceholder, SectionHeading } from '~/shared/ui';
-import { BandWave } from './band-wave';
+import { BandWave, Badge, Container, PhotoPlaceholder, SectionHeading } from '~/shared/ui';
 
 const competitiveStyles = tv({
   slots: {
