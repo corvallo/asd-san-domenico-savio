@@ -23,14 +23,13 @@ const reelsStyles = tv({
 
 type ReelsProps = {
   kicker: string;
-  title: string;
-  hint: string;
+
   reels: Reel[];
   profile: { label: string; href: string };
 };
 
 /** Instagram reels strip: external links only, no embed or API. */
-export const Reels = ({ kicker, title, hint, reels, profile }: ReelsProps) => {
+export const Reels = ({ kicker, reels, profile }: ReelsProps) => {
   const styles = reelsStyles();
 
   return (
@@ -38,8 +37,7 @@ export const Reels = ({ kicker, title, hint, reels, profile }: ReelsProps) => {
       <BandWave />
       <div className={styles.band()}>
         <Container>
-          <ReelsHeader id='reels-title' kicker={kicker} title={title} hint={hint} />
-          <ReelTrack reels={reels} />
+          <ReelTrack reels={reels} label={kicker} header={<ReelsHeader id='reels-title' kicker={kicker} />} />
           <div className={styles.more()}>
             <Button
               as='a'

@@ -47,7 +47,7 @@ export const moments = [
   photoLabel='[FOTO]'
 />
 
-<Moments title='Momenti in pista' hint='Scorri →' items={moments} />
+<Moments client:visible title='Momenti in pista' items={moments} />
 
 <Disciplines title='Le discipline' items={disciplines} />
 
@@ -69,21 +69,8 @@ export const moments = [
 <Events title='Prossimi eventi' items={events} />
 
 <Reels
+  client:visible
   kicker='Instagram'
-  title='I nostri reel'
-  hint='Scorri →'
   reels={reels}
-  profile={{ label: 'Guarda tutti su Instagram', href: 'https://www.instagram.com/PROFILO/' }}
+  profile={{ label: 'Guarda su Instagram', href: 'https://www.instagram.com/PROFILO/' }}
 />
-<Competitive
-  kicker='Settore agonistico'
-  title='Dal sogno alla pista'
-  intro='[Presentazione del percorso agonistico, dei risultati e degli obiettivi della società.]'
-  pillars={['Allenamenti', 'Gare', 'Preparazione atletica']}
-  photoLabel='[FOTO PISTA / GARA]'
-/>
-{/* <TrialCta
-  title='Vieni a provare la pista'
-  details={`${club.address} · ${club.phone} · ${club.email}`}
-  action={{ label: 'Prenota una lezione di prova', href: '/contatti' }}
-/> */}

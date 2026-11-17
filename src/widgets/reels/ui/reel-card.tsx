@@ -54,7 +54,7 @@ export const ReelCard = ({ title, url, cover }: Reel) => {
       className={styles.root()}
     >
       {cover ? (
-        <img src={cover} alt='' loading='lazy' className={styles.cover()} />
+        <img src={cover.src} width={cover.width} height={cover.height} alt='' loading='lazy' className={styles.cover()} />
       ) : (
         <PhotoPlaceholder label='[COPERTINA REEL]' className={styles.cover({ className: 'rounded-none' })} />
       )}

@@ -3,7 +3,8 @@
     {
       "id": "reel-1",
       "title": "[Titolo reel]",
-      "url": "https://www.instagram.com/reel/ID-REEL-1/",
+      "url": "https://www.facebook.com/reel/4636133253334653",
+      "cover": "../../../shared/images/reels/reel1.jpg",
       "order": 1
     },
     {

@@ -7,16 +7,17 @@ export const reelCollection = defineCollection({
     base: './src/entities/reel/content',
     pattern: '**/*.json',
   }),
-  schema: z.object({
-    items: z.array(
-      z.object({
-        id: z.string(),
-        title: z.string(),
-        url: z.url(),
-        cover: z.string().optional(),
-        order: z.number().int(),
-        visible: z.boolean().default(true),
-      }),
-    ),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      items: z.array(
+        z.object({
+          id: z.string(),
+          title: z.string(),
+          url: z.url(),
+          cover: image().optional(),
+          order: z.number().int(),
+          visible: z.boolean().default(true),
+        }),
+      ),
+    }),
 });

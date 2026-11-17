@@ -2,6 +2,7 @@ export * from './badge';
 export * from './band-wave';
 export * from './button';
 export * from './card';
+export * from './carousel';
 export * from './container';
 export * from './field';
 export * from './input';

@@ -6,9 +6,7 @@ const momentItemStyles = tv({
   slots: {
     root: `
       flex-[0_0_min(420px,80%)]
-      snap-start
-
-      list-none
+      min-w-0
     `,
     photo: `
       h-[420px]
