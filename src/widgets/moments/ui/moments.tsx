@@ -33,11 +33,9 @@ export const Moments = ({ title, items }: MomentsProps) => {
           </h2>
         }
       >
-        {items
-
-          .map((item) => (
-            <MomentItem key={item.id} {...item} />
-          ))}
+        {items.map((item) => (
+          <MomentItem key={item.id} {...item} />
+        ))}
       </Carousel>
     </Container>
   );
