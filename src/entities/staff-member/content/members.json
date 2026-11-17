@@ -1,60 +1,92 @@
 {
   "items": [
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
+      "name": "Raffaella Leone",
+      "role": "Direttrice Tecnico e Presidente",
       "group": "direzione",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "bio": "Collaboratrice della Nazionale SKATE ITALIA.",
+      "photo": "../../../shared/images/staff/raffaella-leone.webp",
       "order": 1
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
+      "name": "Ludovica Riccardo",
+      "role": "Allenatore e Responsabile Settore Agonistico",
       "group": "allenatori",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "bio": "Ex atleta della Nazionale Italiana di Pattinaggio Artistico e Allenatore SKATE ITALIA.",
+      "photo": "../../../shared/images/staff/ludovica-riccardo.webp",
       "order": 2
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
+      "name": "Piera Leone",
+      "role": "Allenatore e Responsabile settore Pre agonismo",
       "group": "allenatori",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "bio": "Allenatrice SKATE ITALIA.",
+      "photo": "../../../shared/images/staff/piera-leone.webp",
       "order": 3
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
+      "name": "Annachiara Maraniello",
+      "role": "Allenatore e Responsabile gruppo Rollart 1",
       "group": "allenatori",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "bio": "Allenatrice SKATE ITALIA.",
+      "photo": "../../../shared/images/staff/annachiara-maraniello.webp",
       "order": 4
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
-      "group": "preparatori",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "name": "Chiara Massari",
+      "role": "Allenatrice e Responsabile Gruppo Spettacolo",
+      "group": "allenatori",
+      "bio": "Allenatrice SKATE ITALIA.",
+      "photo": "../../../shared/images/staff/chiara-massari.webp",
       "order": 5
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
-      "group": "preparatori",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "name": "Lorenzo Tommasi",
+      "role": "Allenatore specialità Singolo e Coppie artistico",
+      "group": "allenatori",
+      "bio": "Vice Campione del Mondo 2022 e Allenatore SKATE ITALIA.",
+      "photo": "../../../shared/images/staff/lorenzo-tommasi.webp",
       "order": 6
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
-      "group": "segreteria",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "name": "Elisa Quarta",
+      "role": "Allenatore specialità Singolo e Coppie artistico",
+      "group": "allenatori",
+      "bio": "3^ classificata Campionato Europeo 2021.",
+      "photo": "../../../shared/images/staff/elisa-quarta.webp",
       "order": 7
     },
     {
-      "name": "[Nome Cognome]",
-      "role": "[Ruolo]",
+      "name": "Aurora Carrozzo",
+      "role": "Allenatrice SKATE ITALIA",
       "group": "allenatori",
-      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "bio": "Ex atleta agonista.",
+      "photo": "../../../shared/images/staff/aurora-carrozzo.webp",
       "order": 8
+    },
+    {
+      "name": "Vanessa Pagliara",
+      "role": "Maestra di Ginnastica Ritmica",
+      "group": "allenatori",
+      "bio": "Ex atleta agonista.",
+      "photo": "../../../shared/images/staff/vanessa-pagliara.webp",
+      "order": 9
+    },
+    {
+      "name": "Benedetta Lucia",
+      "role": "Preparatrice atletica",
+      "group": "preparatori",
+      "bio": "Dott.ssa in Scienze Motorie.",
+      "photo": "../../../shared/images/staff/benedetta-lucia.webp",
+      "order": 10
+    },
+    {
+      "name": "Manuel Tarantino",
+      "role": "Preparatore atletico",
+      "group": "preparatori",
+      "bio": "Studente di Scienze Motorie.",
+      "photo": "../../../shared/images/staff/manuel-tarantino.webp",
+      "order": 11
     }
   ]
 }

@@ -33,6 +33,7 @@ export const StaffList = ({ members }: { members: StaffMember[] }) => {
           title={member.name}
           subtitle={member.role}
           description={member.bio}
+          photo={member.photo}
           className={styles.item()}
         />
       ))}

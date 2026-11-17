@@ -39,9 +39,7 @@ const trialCta = { label: 'Prova gratuita', href: '/contatti' };
       <MainNavigation items={items} currentPath={currentPath} />
       <HeaderRight>
         <ThemeSwitcher client:load />
-        <Button as='a' href={trialCta.href} size='cta' className='hidden lg:inline-flex'>
-          {trialCta.label}
-        </Button>
+
         <!-- Island only below lg, where the sheet menu replaces the inline navigation. -->
         <MobileNavigation
           client:media='(max-width: 1023px)'

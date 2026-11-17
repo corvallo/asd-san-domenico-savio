@@ -18,7 +18,7 @@ export const Footer = ({ club, pages }: FooterProps) => {
       <footer className={styles.band()}>
         <Container className={styles.grid()}>
           <FooterBrand name={club.name} slogan={club.slogan} />
-          <FooterColumn title='Pagine' items={pages.map(({ label, href }) => ({ label, href }))} />
+          <FooterColumn title='' items={pages.map(({ label, href }) => ({ label, href }))} />
           <FooterColumn
             title='Contatti'
             items={[

@@ -1,7 +1,9 @@
 /* Theme source: shadcn tokens + brand tokens (design-reference/styles/globals.css). */
 @custom-variant dark (&:is(.dark *));
 
-:root {
+/* Light palette; also applied to `.band-invert` sections in dark mode. */
+:root,
+.dark .band-invert {
   color-scheme: light;
 
   --radius: 1rem;
@@ -56,6 +58,7 @@
   --gold-foreground: oklch(0.254 0.06 264.8); /* #14213F */
   --gold-text: oklch(0.53 0.111 77.4); /* #8F6200 */
   --wood: oklch(0.879 0.065 76); /* #F0D2A8 */
+  --cream: oklch(0.965 0.022 87.2); /* #FAF3E3, text on navy in any theme */
   --band: oklch(0.339 0.09 264); /* #1F3566 */
   --band-foreground: oklch(0.965 0.022 87.2); /* #FAF3E3 */
   --band-accent: oklch(0.867 0.126 88.8); /* #F5CF6B */
@@ -118,6 +121,14 @@
   --band-accent: oklch(0.867 0.126 88.8); /* #F5CF6B */
 }
 
+/* Band inverted in dark mode: light palette (above) on a white band. */
+.dark .band-invert {
+  color-scheme: light;
+  --band: oklch(1 0 0); /* #FFFFFF */
+  --band-foreground: oklch(0.309 0.084 265.4); /* #1B2D5A */
+  --band-accent: oklch(0.53 0.111 77.4); /* #8F6200 */
+}
+
 @theme inline {
   /* Typography */
   --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
@@ -174,6 +185,7 @@
   --color-gold-foreground: var(--gold-foreground);
   --color-gold-text: var(--gold-text);
   --color-wood: var(--wood);
+  --color-cream: var(--cream);
   --color-band: var(--band);
   --color-band-foreground: var(--band-foreground);
   --color-band-accent: var(--band-accent);

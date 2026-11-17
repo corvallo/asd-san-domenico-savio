@@ -1,17 +1,17 @@
 # Graph Report - asd-san-domenico-savio  (2026-11-17)
 
 ## Corpus Check
-- 300 files · ~32,764 words
+- 300 files · ~32,929 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 6 file(s) not represented in the graph (top: .css 3, (none) 2, .ico 1)
 
 ## Summary
-- 788 nodes · 1884 edges · 45 communities (33 shown, 12 thin omitted)
+- 788 nodes · 1883 edges · 44 communities (32 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `28898500`
+- Built from commit: `e49b13df`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -26,15 +26,14 @@
 - sheet/index.ts
 - field.types.ts
 - react
-- competitive.tsx
 - SectionHeading
+- content.config.ts
 - avatar/index.ts
 - events.tsx
 - contact.tsx
 - package.json
 - dependencies
 - aliases
-- textarea.tsx
 - .oxfmtrc.json
 - Sito società di pattinaggio artistico
 - checkbox.tsx
@@ -57,7 +56,7 @@
 ## God Nodes (most connected - your core abstractions)
 1. `tailwind-variants` - 69 edges
 2. `@base-ui/react` - 55 edges
-3. `react` - 37 edges
+3. `react` - 38 edges
 4. `Container()` - 29 edges
 5. `Button()` - 25 edges
 6. `fieldStyles` - 19 edges
@@ -73,27 +72,27 @@
   src/features/main-navigation/ui/mobile-navigation.tsx → src/features/main-navigation/lib/is-active-path.ts
 - `MobileNavigation()` --calls--> `Button()`  [EXTRACTED]
   src/features/main-navigation/ui/mobile-navigation.tsx → src/shared/ui/button/button.tsx
-- `Portrait()` --calls--> `portraitStyles`  [EXTRACTED]
-  src/features/portrait/ui/portrait.tsx → src/features/portrait/ui/portrait.style.ts
 - `Portrait()` --calls--> `PhotoPlaceholder()`  [EXTRACTED]
   src/features/portrait/ui/portrait.tsx → src/shared/ui/photo-placeholder/photo-placeholder.tsx
+- `ThemeSwitcher()` --calls--> `Button()`  [EXTRACTED]
+  src/features/theme-switcher/ui/theme-switcher.tsx → src/shared/ui/button/button.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (45 total, 12 thin omitted)
+## Communities (44 total, 12 thin omitted)
 
 ### Community 0 - "tailwind-variants"
-Cohesion: 0.06
-Nodes (48): tailwind-variants, getReels(), Reel, PortraitProps, portraitStyles, Carousel(), CarouselProps, carouselStyles (+40 more)
+Cohesion: 0.08
+Nodes (32): Carousel(), CarouselProps, carouselStyles, PhotoCaption(), PhotoCaptionProps, photoCaptionStyles, PhotoPlaceholder(), PhotoPlaceholderProps (+24 more)
 
 ### Community 1 - "Container"
 Cohesion: 0.05
 Nodes (31): trialCta, getNavigation(), NavigationItem, BrandMark(), BrandMarkProps, brandMarkStyles, Logo(), PageContent() (+23 more)
 
 ### Community 2 - "content.config.ts"
-Cohesion: 0.07
-Nodes (29): astro@^7.4.5, astro, collections, getClub(), clubCollection, Club, SocialLink, courseCollection (+21 more)
+Cohesion: 0.08
+Nodes (25): tailwind-variants, getStaffMembers(), staffMemberCollection, staffRoleFilters, staffRoles, StaffMember, StaffRole, StaffRoleFilter (+17 more)
 
 ### Community 3 - "carousel-context.tsx"
 Cohesion: 0.09
@@ -123,13 +122,13 @@ Nodes (22): FieldContent(), FieldDescription(), FieldError(), Field(), FieldGrou
 Cohesion: 0.17
 Nodes (12): react, CardAction(), Card(), CardContent(), CardDescription(), CardFooter(), CardHeader(), cardStyles (+4 more)
 
-### Community 10 - "competitive.tsx"
-Cohesion: 0.14
-Nodes (14): getCourses(), Course, Badge(), badgeVariants, BadgeProps, BandWave(), bandWaveStyles, Competitive() (+6 more)
+### Community 10 - "SectionHeading"
+Cohesion: 0.07
+Nodes (29): getReels(), Reel, Badge(), badgeVariants, BadgeProps, BandSection(), bandSectionStyles, SectionHeading() (+21 more)
 
-### Community 11 - "SectionHeading"
-Cohesion: 0.13
-Nodes (15): getDisciplines(), Discipline, SectionHeading(), SectionHeadingProps, sectionHeadingStyles, DisciplineRow(), disciplineRowStyles, Disciplines() (+7 more)
+### Community 11 - "content.config.ts"
+Cohesion: 0.07
+Nodes (26): astro@^7.4.5, astro, collections, getClub(), clubCollection, Club, SocialLink, getCourses() (+18 more)
 
 ### Community 12 - "avatar/index.ts"
 Cohesion: 0.31
@@ -154,10 +153,6 @@ Nodes (16): dependencies, @base-ui/react@^1.9.0, embla-carousel@^8.6.0, embla-ca
 ### Community 17 - "aliases"
 Cohesion: 0.13
 Nodes (14): aliases, components, hooks, lib, ui, utils, rsc, $schema (+6 more)
-
-### Community 18 - "textarea.tsx"
-Cohesion: 0.24
-Nodes (6): Banner(), BannerProps, bannerStyle, textareaStyles, Textarea(), TextareaProps
 
 ### Community 19 - ".oxfmtrc.json"
 Cohesion: 0.18
@@ -223,17 +218,17 @@ Nodes (4): zod@^4.6.7, engines, node, zod
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `tailwind-variants` connect `tailwind-variants` to `Container`, `content.config.ts`, `carousel-context.tsx`, `@base-ui/react`, `Button`, `navigation-menu/index.ts`, `sheet/index.ts`, `field.types.ts`, `react`, `competitive.tsx`, `SectionHeading`, `avatar/index.ts`, `events.tsx`, `contact.tsx`, `package.json`, `dependencies`, `textarea.tsx`, `checkbox.tsx`?**
-  _High betweenness centrality (0.262) - this node is a cross-community bridge._
+- **Why does `tailwind-variants` connect `content.config.ts` to `tailwind-variants`, `Container`, `carousel-context.tsx`, `@base-ui/react`, `Button`, `navigation-menu/index.ts`, `sheet/index.ts`, `field.types.ts`, `react`, `SectionHeading`, `content.config.ts`, `avatar/index.ts`, `events.tsx`, `contact.tsx`, `package.json`, `dependencies`, `checkbox.tsx`?**
+  _High betweenness centrality (0.261) - this node is a cross-community bridge._
 - **What connects `astro/tsconfigs/strict` to the rest of the system?**
   _1 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `tailwind-variants` be split into smaller, more focused modules?**
-  _Cohesion score 0.060759493670886074 - nodes in this community are weakly interconnected._
-- **Why does `react` connect `react` to `tailwind-variants`, `Container`, `carousel-context.tsx`, `@base-ui/react`, `Button`, `navigation-menu/index.ts`, `sheet/index.ts`, `field.types.ts`, `SectionHeading`, `avatar/index.ts`, `contact.tsx`, `package.json`, `dependencies`, `textarea.tsx`, `theme-switcher.tsx`?**
-  _High betweenness centrality (0.155) - this node is a cross-community bridge._
+  _Cohesion score 0.0841799709724238 - nodes in this community are weakly interconnected._
+- **Why does `react` connect `react` to `tailwind-variants`, `Container`, `content.config.ts`, `carousel-context.tsx`, `@base-ui/react`, `Button`, `navigation-menu/index.ts`, `sheet/index.ts`, `field.types.ts`, `SectionHeading`, `avatar/index.ts`, `contact.tsx`, `package.json`, `dependencies`, `theme-switcher.tsx`?**
+  _High betweenness centrality (0.158) - this node is a cross-community bridge._
 - **Should `Container` be split into smaller, more focused modules?**
   _Cohesion score 0.05223880597014925 - nodes in this community are weakly interconnected._
-- **Why does `@base-ui/react` connect `@base-ui/react` to `Button`, `navigation-menu/index.ts`, `sheet/index.ts`, `competitive.tsx`, `avatar/index.ts`, `contact.tsx`, `package.json`, `dependencies`, `checkbox.tsx`?**
-  _High betweenness centrality (0.085) - this node is a cross-community bridge._
+- **Why does `@base-ui/react` connect `@base-ui/react` to `Button`, `navigation-menu/index.ts`, `sheet/index.ts`, `SectionHeading`, `avatar/index.ts`, `contact.tsx`, `package.json`, `dependencies`, `checkbox.tsx`?**
+  _High betweenness centrality (0.084) - this node is a cross-community bridge._
 - **Should `content.config.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.06883116883116883 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0797872340425532 - nodes in this community are weakly interconnected._

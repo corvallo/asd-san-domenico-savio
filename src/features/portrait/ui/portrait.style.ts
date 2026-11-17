@@ -27,6 +27,18 @@ export const portraitStyles = tv({
       absolute
       inset-0
     `,
+    image: `
+      overflow-hidden
+
+      rounded-full
+      bg-wood
+    `,
+    img: `
+      size-full
+
+      object-cover
+      object-top
+    `,
     body: ``,
     title: `
       m-0

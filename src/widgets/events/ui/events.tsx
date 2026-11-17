@@ -6,6 +6,7 @@ import { EventItem } from './event-item';
 const eventsStyles = tv({
   slots: {
     root: `
+      pt-28
       pb-28
     `,
     heading: `

@@ -24,7 +24,7 @@ const photoCaptionStyles = tv({
         px-[18px]
 
         bg-gold-foreground
-        text-band-foreground
+        text-cream
       `,
     },
   },

@@ -20,9 +20,11 @@ export const Staff = ({ title, filters, members, showAll }: StaffProps) => {
       <SectionHeading id='staff-title' title={title} className={heading()} />
       <StaffFilter filters={filters} active='tutti' />
       <ul className={grid()}>
-        {members.map((member) => (
-          <Portrait key={member.id} title={member.name} subtitle={member.role} />
-        ))}
+        {members
+          .filter((_, i) => i < 5)
+          .map((member) => (
+            <Portrait key={member.id} title={member.name} subtitle={member.role} photo={member.photo} />
+          ))}
       </ul>
       <div className={more()}>
         <Button as='a' href={showAll.href} size='hero' variant='gold-outline'>

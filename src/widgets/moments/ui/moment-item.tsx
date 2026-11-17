@@ -1,5 +1,5 @@
 import { tv } from 'tailwind-variants';
-import { PhotoCaption, PhotoPlaceholder } from '~/shared/ui';
+import { PhotoPlaceholder } from '~/shared/ui';
 import type { Moment } from '../model/types';
 
 const momentItemStyles = tv({
@@ -18,14 +18,12 @@ const momentItemStyles = tv({
   },
 });
 
-export const MomentItem = ({ label, caption, shape }: Moment) => {
+export const MomentItem = ({ label, shape }: Moment) => {
   const styles = momentItemStyles();
 
   return (
     <li className={styles.root()}>
-      <PhotoPlaceholder shape={shape} label={label} className={styles.photo()}>
-        <PhotoCaption className={styles.caption()}>{caption}</PhotoCaption>
-      </PhotoPlaceholder>
+      <PhotoPlaceholder shape={shape} label={label} className={styles.photo()}></PhotoPlaceholder>
     </li>
   );
 };

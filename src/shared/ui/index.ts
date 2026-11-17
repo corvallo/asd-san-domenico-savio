@@ -1,5 +1,5 @@
 export * from './badge';
-export * from './band-wave';
+export * from './band-section';
 export * from './button';
 export * from './card';
 export * from './carousel';

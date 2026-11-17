@@ -8,16 +8,18 @@ export const staffMemberCollection = defineCollection({
     base: './src/entities/staff-member/content',
     pattern: '**/*.json',
   }),
-  schema: z.object({
-    items: z.array(
-      z.object({
-        name: z.string(),
-        role: z.string(),
-        group: z.enum(staffRoles),
-        bio: z.string(),
-        order: z.number().int(),
-        visible: z.boolean().default(true),
-      }),
-    ),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      items: z.array(
+        z.object({
+          name: z.string(),
+          role: z.string(),
+          group: z.enum(staffRoles),
+          bio: z.string(),
+          photo: image(),
+          order: z.number().int(),
+          visible: z.boolean().default(true),
+        }),
+      ),
+    }),
 });

@@ -17,5 +17,6 @@ export async function getStaffMembers(name = 'members'): Promise<StaffMember[]> 
       role: item.role,
       group: item.group,
       bio: item.bio,
+      photo: item.photo,
     }));
 }

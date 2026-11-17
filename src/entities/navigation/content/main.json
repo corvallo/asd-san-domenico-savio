@@ -21,14 +21,19 @@
       "order": 4
     },
     {
+      "label": "Calendario Attività",
+      "href": "/calendario",
+      "order": 6
+    },
+    {
       "label": "Galleria",
       "href": "/galleria",
-      "order": 5
+      "order": 6
     },
     {
       "label": "Contatti",
       "href": "/contatti",
-      "order": 6
+      "order": 7
     }
   ]
 }

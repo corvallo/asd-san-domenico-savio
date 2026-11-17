@@ -8,6 +8,7 @@ export interface StaffMember {
   role: string;
   group: StaffRole;
   bio: string;
+  photo: ImageMetadata;
 }
 
 export interface StaffRoleFilter {
