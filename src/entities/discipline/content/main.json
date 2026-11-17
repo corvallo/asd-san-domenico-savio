@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "libero",
+      "number": "01",
+      "title": "Libero",
+      "description": "Salti, trottole e passi di collegamento: la disciplina individuale.",
+      "href": "/corsi",
+      "order": 1
+    },
+    {
+      "id": "coppie-danza",
+      "number": "02",
+      "title": "Coppie e danza",
+      "description": "Sincronia, musicalità e figure da costruire insieme.",
+      "href": "/corsi",
+      "order": 2
+    },
+    {
+      "id": "show-gruppi",
+      "number": "03",
+      "title": "Show e gruppi",
+      "description": "Coreografie di squadra, scenografia e spettacolo.",
+      "href": "/corsi",
+      "order": 3
+    },
+    {
+      "id": "scuola",
+      "number": "04",
+      "title": "Scuola pattinaggio",
+      "description": "I primi passi su rotelle, per bambini e adulti.",
+      "href": "/corsi",
+      "order": 4
+    }
+  ]
+}

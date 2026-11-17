@@ -1,5 +1,14 @@
 ---
-title: Contatti
+title: Vieni a trovarci
+kicker: Contatti
+description: '[Intro: prenota una lezione di prova.]'
 seo:
   title: Contatti | ASD San Domenico Savio
 ---
+
+import { getClub } from '~/entities/club';
+import { Contact } from '~/widgets/contact';
+
+export const club = await getClub();
+
+<Contact club={club} submitLabel='Invia richiesta' />

@@ -1,0 +1,22 @@
+---
+title: Momenti in pista
+kicker: Galleria
+description: '[Intro: gare, saggi e allenamenti.]'
+
+seo:
+  title: ASD San Domenico Savio | Galleria
+  description: 'Galleria'
+---
+
+import { Gallery } from '~/widgets/gallery';
+
+export const photos = [
+  { id: 'g1', label: '[FOTO 1]', shape: 'petal', span: 2, height: 'sm' },
+  { id: 'g2', label: '[FOTO 2]', shape: 'petal-reverse', span: 1, height: 'sm' },
+  { id: 'g3', label: '[FOTO 3]', shape: 'arch-top', span: 1, height: 'lg' },
+  { id: 'g4', label: '[FOTO 4]', shape: 'arch-bottom', span: 2, height: 'lg' },
+  { id: 'g5', label: '[FOTO 5]', shape: 'leaf-top', span: 1, height: 'sm' },
+  { id: 'g6', label: '[FOTO 6]', shape: 'leaf-bottom', span: 2, height: 'sm' },
+];
+
+<Gallery items={photos} />

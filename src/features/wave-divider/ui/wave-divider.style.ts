@@ -1,10 +1,22 @@
-import { sxv } from "@stylex-variants/core";
-import { colors } from "~/shared/styles/tokens/colors.stylex";
+import { tv } from 'tailwind-variants';
 
-export const waveStyle = sxv({
-    slots: {
-        wave: { position: "absolute", bottom: -1, left: 0, width: "100%", height: "5vw" },
-        waveGold: { fill: colors.gold300 },
-        waveIvory: { fill: colors.ivory50, stroke: colors.ivory50, strokeWidth: 2 },
-    },
-})
+export const waveStyle = tv({
+  slots: {
+    wave: `
+      absolute
+      bottom-[-1px]
+      left-0
+
+      w-full
+      h-[5vw]
+    `,
+    waveGold: `
+      fill-accent
+    `,
+    waveIvory: `
+      fill-foreground
+      stroke-foreground
+      [stroke-width:2]
+    `,
+  },
+});

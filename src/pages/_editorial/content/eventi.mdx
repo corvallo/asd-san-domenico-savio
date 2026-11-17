@@ -5,3 +5,10 @@ description: Gare, esibizioni e appuntamenti speciali.
 seo:
   title: Eventi | ASD San Domenico Savio
 ---
+
+import { getEvents } from '~/entities/event';
+import { EventList } from '~/widgets/event-list';
+
+export const events = await getEvents();
+
+<EventList events={events} />

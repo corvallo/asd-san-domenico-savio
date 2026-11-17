@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "event-1",
+      "date": "[GG MMM]",
+      "title": "[Titolo evento]",
+      "place": "[Luogo]",
+      "href": "/eventi",
+      "description": "[Breve descrizione dell’evento: programma, categorie coinvolte e informazioni utili.]",
+      "order": 1
+    },
+    {
+      "id": "event-2",
+      "date": "[GG MMM]",
+      "title": "[Titolo evento]",
+      "place": "[Luogo]",
+      "href": "/eventi",
+      "description": "[Breve descrizione dell’evento: programma, categorie coinvolte e informazioni utili.]",
+      "order": 2
+    },
+    {
+      "id": "event-3",
+      "date": "[GG MMM]",
+      "title": "[Titolo evento]",
+      "place": "[Luogo]",
+      "href": "/eventi",
+      "description": "[Breve descrizione dell’evento: programma, categorie coinvolte e informazioni utili.]",
+      "order": 3
+    }
+  ]
+}

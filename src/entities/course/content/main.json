@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "scuola",
+      "title": "Scuola pattinaggio",
+      "subtitle": "Primi passi su rotelle",
+      "schedule": "[Giorni · Orari]",
+      "price": "[€ / mese]",
+      "order": 1
+    },
+    {
+      "id": "pre-agonistico",
+      "title": "Pre-agonistico",
+      "subtitle": "Tecnica e avvicinamento alle gare",
+      "schedule": "[Giorni · Orari]",
+      "price": "[€ / mese]",
+      "order": 2
+    },
+    {
+      "id": "agonistico",
+      "title": "Agonistico",
+      "subtitle": "Preparazione a gare e campionati",
+      "schedule": "[Giorni · Orari]",
+      "price": "[€ / mese]",
+      "order": 3
+    },
+    {
+      "id": "adulti",
+      "title": "Adulti",
+      "subtitle": "Corso amatoriale per tutti i livelli",
+      "schedule": "[Giorni · Orari]",
+      "price": "[€ / mese]",
+      "order": 4
+    }
+  ]
+}

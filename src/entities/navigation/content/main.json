@@ -1,29 +1,34 @@
 {
-    "items": [
-        {
-            "label": "Home",
-            "href": "/",
-            "order": 1
-        },
-        {
-            "label": "Chi siamo",
-            "href": "/about",
-            "order": 2
-        },
-        {
-            "label": "Corsi",
-            "href": "/corsi",
-            "order": 3
-        },
-        {
-            "label": "Eventi",
-            "href": "/eventi",
-            "order": 4
-        },
-        {
-            "label": "Contatti",
-            "href": "/contatti",
-            "order": 6
-        }
-    ]
+  "items": [
+    {
+      "label": "Home",
+      "href": "/",
+      "order": 1
+    },
+    {
+      "label": "Corsi",
+      "href": "/corsi",
+      "order": 2
+    },
+    {
+      "label": "Staff",
+      "href": "/staff",
+      "order": 3
+    },
+    {
+      "label": "Eventi",
+      "href": "/eventi",
+      "order": 4
+    },
+    {
+      "label": "Galleria",
+      "href": "/galleria",
+      "order": 5
+    },
+    {
+      "label": "Contatti",
+      "href": "/contatti",
+      "order": 6
+    }
+  ]
 }

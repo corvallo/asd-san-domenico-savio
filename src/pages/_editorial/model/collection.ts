@@ -10,6 +10,8 @@ export const pageCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    kicker: z.string().optional(),
+    pageLayout: z.literal(['landing', 'default']).default('default').optional(),
     seo: z
       .object({
         title: z.string().optional(),

@@ -1,0 +1,24 @@
+{
+  "name": "ASD San Domenico Savio",
+  "city": "Lecce",
+  "slogan": "[Slogan o breve descrizione della società]",
+  "address": "Viale Giovanni Paolo II , Lecce, Italy, 73100",
+  "phone": "+39 350 943 9843",
+  "email": "asdsandomenicosaviolecce@gmail.com",
+  "officeHours": "[Giorni · Orari]",
+  "vatNumber": "[00000000000]",
+  "socials": [
+    {
+      "label": "[Instagram]",
+      "href": "#"
+    },
+    {
+      "label": "[Facebook]",
+      "href": "#"
+    },
+    {
+      "label": "[YouTube]",
+      "href": "#"
+    }
+  ]
+}

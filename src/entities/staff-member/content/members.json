@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "direzione",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 1
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "allenatori",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 2
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "allenatori",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 3
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "allenatori",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 4
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "preparatori",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 5
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "preparatori",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 6
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "segreteria",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 7
+    },
+    {
+      "name": "[Nome Cognome]",
+      "role": "[Ruolo]",
+      "group": "allenatori",
+      "bio": "[Breve descrizione: esperienza, qualifiche e ruolo all’interno della società.]",
+      "order": 8
+    }
+  ]
+}

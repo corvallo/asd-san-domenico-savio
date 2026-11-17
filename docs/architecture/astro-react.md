@@ -1,7 +1,8 @@
 # Astro + React
 
 - `.astro`: route adapters, layouts, static page composition, semantic document structure.
-- `.tsx`: React UI that uses StyleX or needs interactivity; SSR by default.
+- `.tsx`: React UI primitives or interactive components; SSR by default.
+- Declare components as exported arrow functions: `export const ComponentName = (props: Props) => { ... };`.
 - Add `client:load`, `client:visible`, etc. only to an interactive island with a documented reason.
 - No hydration for decorative static components.
 - Animation: respect `prefers-reduced-motion`; cleanup animation frames, GSAP contexts, event listeners on unmount. No perpetual animation unless the task explicitly requires it.

@@ -1,6 +1,14 @@
 ---
-title: Corsi
-description: Percorsi formativi per ogni età e livello
+title: Trova il tuo livello
+kicker: Corsi e orari
+description: '[Intro: come funzionano i corsi, iscrizione e lezione di prova.]'
 seo:
   title: Corsi | ASD San Domenico Savio
 ---
+
+import { getCourses } from '~/entities/course';
+import { Courses } from '~/widgets/courses';
+
+export const courses = await getCourses();
+
+<Courses items={courses} />

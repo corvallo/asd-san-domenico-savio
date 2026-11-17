@@ -1,1 +1,2 @@
-export * from './ui/logo'
+export { Logo } from './ui/logo';
+export { BrandMark } from './ui/brand-mark';

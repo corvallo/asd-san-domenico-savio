@@ -1,7 +1,9 @@
-import type { ComponentPropsWithoutRef } from 'react';
-import type { VariantProps } from '@stylex-variants/core';
-import type { buttonStyles } from './button.style';
+import type { ComponentPropsWithRef } from 'react';
+import type { VariantProps } from 'tailwind-variants';
+import type { Button as ButtonPrimitive } from '@base-ui/react/button';
+import type { buttonVariants } from './button.style';
 
-export type ButtonProps =
-    ComponentPropsWithoutRef<'button'> &
-    VariantProps<typeof buttonStyles>;
+type ButtonVariantProps = VariantProps<typeof buttonVariants>;
+
+export type ButtonProps = ButtonVariantProps &
+  ((ButtonPrimitive.Props & { as?: 'button' }) | (ComponentPropsWithRef<'a'> & { as: 'a'; href: string }));
